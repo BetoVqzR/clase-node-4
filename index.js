@@ -16,7 +16,7 @@ connection.connect();
 
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(express.json()) // for parsing application/json
-app.use(express.urlencoded({ extended: true })) // for parsing application/x-www-form-urlencode
+app.use(express.urlencoded({ extended: true })) // for parsing application/x-www-form-urlencoded
 
 app.get('/', (req, res) => {
   res.send("Bienvenido a la API de Alberto Vazquez Robles");
