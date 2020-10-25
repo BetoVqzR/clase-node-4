@@ -11,7 +11,7 @@ const connection = mysql.createConnection({
   database : 'ejercicio4'
 });
 
-//Conectarnos a la base de datos
+//Conectamos a la base de datos
 connection.connect();
 
 app.use(express.static(path.join(__dirname, 'public')));
